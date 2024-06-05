@@ -1,5 +1,7 @@
 # Análisis de Siniestros Viales en la Ciudad de Buenos Aires (2016-2021)
 
+![Portada](./assets/portada.png)
+
 ## Índice
 - [Introducción](#introducción)
 - [Fuente de Datos](#fuente-de-datos)
@@ -34,7 +36,7 @@ Los datos utilizados en este análisis provienen de las siguientes fuentes:
 Para llevar a cabo este proyecto, se siguieron los siguientes pasos:
 
 ### Extracción, Transformación y Carga (ETL)
-Se realizó un proceso de ETL para preparar los datos antes del análisis. Esto incluyó la extracción de los datos desde las fuentes originales, la limpieza y transformación de los mismos para garantizar su calidad y consistencia, y finalmente, la carga de los datos procesados en una base de datos para su posterior uso. El proceso de ETL se encuentra detallado en el archivo [`ETL.ipynb`](./notebooks/ETL.ipynb).
+Se realizó un proceso de ETL para preparar los datos antes del análisis. Esto incluyó la extracción de los datos desde las fuentes originales, la limpieza y transformación de los mismos para garantizar su calidad y consistencia, y finalmente, la carga de los datos procesados en una base de datos para su posterior uso. El proceso de ETL se encuentra detallado en el archivo [`ETL.ipynb`](./ETL.ipynb).
 
 ### Análisis Exploratorio de Datos (EDA)
 Se realizó un análisis exhaustivo de los datos utilizando Python y las librerías pandas, numpy y matplotlib en un notebook de Jupyter. Durante este proceso, se llevaron a cabo las siguientes tareas:
@@ -43,7 +45,9 @@ Se realizó un análisis exhaustivo de los datos utilizando Python y las librer�
 - Generación de visualizaciones coherentes para una mejor comprensión de los datos.
 - Documentación detallada de los hallazgos y conclusiones en cada etapa del análisis.
 
-El análisis exploratorio de datos se encuentra en el archivo [`EDA.ipynb`](./notebooks/EDA.ipynb).
+El análisis exploratorio de datos se encuentra en el archivo [`EDA.ipynb`](./EDA.ipynb).
+
+![Análisis Exploratorio de Datos](./assets/EDA.png)
 
 ### Definición y Seguimiento de KPIs
 Antes de desarrollar el dashboard, se establecieron tres Key Performance Indicators (KPIs) para medir el progreso en la reducción de víctimas fatales en siniestros viales:
@@ -51,13 +55,15 @@ Antes de desarrollar el dashboard, se establecieron tres Key Performance Indicat
 - KPI 2: Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, respecto al año anterior. El archivo relacionado a este KPI se encuentra en [`kpi2.csv`](./assets/kpi2.csv).
 - KPI 3 (propuesto por el equipo): Disminuir en un 5% la proporción de víctimas fatales menores de 25 años en el próximo trimestre, en comparación con el trimestre actual. El archivo relacionado a este KPI se encuentra en [`kpi3.csv`](./assets/kpi3.csv).
 
+![KPIs](./assets/KPIs.png)
+
 ### Desarrollo de Dashboard
 Se creó un dashboard interactivo utilizando la herramienta Power BI para presentar los principales insights de forma clara y accesible. Los KPIs definidos anteriormente se implementaron en el dashboard para su seguimiento. Además, el dashboard incluye:
 - Filtros para explorar los datos según diferentes criterios (fecha, tipo de siniestro, características de las víctimas, etc.).
 - Gráficos y visualizaciones que facilitan la interpretación de la información.
 - Un diseño intuitivo y estéticamente agradable para mejorar la experiencia del usuario.
 
-El archivo del dashboard se encuentra en la carpeta [`Dashboard`](./Dashboard/Dashboard.pbix).
+El archivo del dashboard se encuentra en la carpeta [`Dashboard.pbix`](./Dashboard.pbix).
 
 ## Resultados y Conclusiones
 
